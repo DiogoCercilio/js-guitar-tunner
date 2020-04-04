@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Pitch Detector</title>
+        <link rel="stylesheet" href="main.css">
+        <script async src="app.js"></script>
+    </head>
+	<body>
+        <button id="useDemo">Use playback</button>
+        <button id="useLive">Use Live input</button>
+        <button id="useOscillator">Use oscillator</button>
+
+		<div id="detector" class="vague">
+            <div class="note">
+                <span id="note">-</span>
+            </div>
+
+			<div id="detune">
+                <span id="detune_amt">-</span>
+                <span id="flat">cents &#9837;</span>
+                <span id="sharp">cents &#9839;</span>
+            </div>
+
+            <div class="pitch">
+                <span id="pitch">-</span>Hz
+            </div>
+        </div>
+	</body>
+</html>

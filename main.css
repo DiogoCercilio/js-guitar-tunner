@@ -1,0 +1,56 @@
+body.loading::before {
+    content: "Loading...";
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    position: absolute;
+    padding-top: 100px;
+}
+
+#note {
+    font-size: 164px;
+}
+
+#flat {
+    display: none;
+}
+
+#sharp {
+    display: none;
+}
+
+.flat #flat {
+    display: inline;
+}
+
+.sharp #sharp {
+    display: inline;
+}
+
+button {
+    position: relative;
+    background-color: #00a;
+    color: #fff;
+    padding: 10px;
+    line-height: 20px;
+    box-sizing: border-box;
+    border: none;
+    width: 100px;
+}
+
+button:focus,
+button:hover {
+    user-select: none;
+    outline: none;
+}
+
+button.active::before {
+    content: "Stop";
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 100%;
+    top: 0;
+    line-height: 40px;
+    background-color: #a00;
+}
